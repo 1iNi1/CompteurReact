@@ -2,11 +2,13 @@
   "name": "reduxcoursaz",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://1iNi1.github.io/compteur",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.1",
     "@testing-library/user-event": "^7.2.1",
     "eslint-plugin-flowtype": "^3.13.0",
+    "gh-pages": "^3.1.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-redux": "^7.2.0",
@@ -15,6 +17,7 @@
     "typescript": "^3.9.7"
   },
   "scripts": {
+    "deploy": "npm run build&&gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
